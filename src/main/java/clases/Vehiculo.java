@@ -2,7 +2,7 @@ package clases;
 
 import java.util.Random;
 
-public class Vehiculo implements Combustion{
+public abstract class Vehiculo implements Combustion{
 
     private Float km;
     protected Integer CV;
