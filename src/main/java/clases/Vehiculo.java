@@ -16,6 +16,9 @@ public abstract class Vehiculo implements Combustion{
         this.litrosCombustible = 0f;
     }
 
+    public Float getKm(){
+        return this.km;
+    }
 
     @Override
     public Boolean encender() {
@@ -69,4 +72,16 @@ public abstract class Vehiculo implements Combustion{
     public void reposta(Float litrosCombustible){
         this.litrosCombustible+=litrosCombustible;
     }
+
+    @Override
+    public String toString() {
+        return "Vehiculo{" +
+                "km=" + km +
+                ", CV=" + CV +
+                ", consumoL100Km=" + consumoL100Km +
+                ", litrosCombustible=" + litrosCombustible +
+                ", buenFuncionamiento=" + buenFuncionamiento +
+                '}';
+    }
+
 }

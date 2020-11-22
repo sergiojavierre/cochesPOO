@@ -14,7 +14,11 @@ public class Conductor {
         this.vehiculos = new ArrayList<>();
     }
 
-    public void compra(Vehiculo vehiculo){
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void asigna(Vehiculo vehiculo){
         this.vehiculos.add(vehiculo);
     }
 
@@ -36,4 +40,16 @@ public class Conductor {
         vehiculo.reposta(litrosCombustible);
     }
 
+    public List<Vehiculo>getVehiculos(){
+        return this.vehiculos;
+    }
+
+    @Override
+    public String toString() {
+        return "Conductor{" +
+                "nombre='" + nombre + '\'' +
+                ", velocidadMedia=" + velocidadMedia +
+                ", vehiculos=" + vehiculos +
+                '}';
+    }
 }
